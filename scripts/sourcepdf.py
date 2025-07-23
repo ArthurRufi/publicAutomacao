@@ -1,22 +1,7 @@
 import os
 
-#caminho = input("Digite o caminho da pasta: ").strip()
-#caminhopro = "C:\\Users\\noteo\\Downloads"
-#caminhofinal = "D:\\Automacao\\pdf"
-# Garantir que o caminho termina com uma barra invertida
-#if not caminhopro.endswith("\\"):
- #   caminhopro += "\\"
-
-# Executar comando para listar PDFs
-
-
-#for arquivo in caminho_pdf_add:
- #   ...
-
-
-#------------------------------------------------------------------------#
-
-class EncotrarPDF:
+#criar futura abstração para receber mais que um tipo de arquivo
+class EncontrarPDF:
     def __init__(self, caminho_pdf : str):
         self.caminho_pdf = caminho_pdf
 
