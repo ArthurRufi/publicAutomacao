@@ -21,7 +21,7 @@ class EncotrarPDF:
         self.caminho_pdf = caminho_pdf
 
 
-    def search_pdf(self):
+    def search_pdfs(self):
         # Implementar lógica para encontrar o PDF
         arquivos = os.listdir(f'{self.caminho_pdf}')
         caminho_pdf_add = []
