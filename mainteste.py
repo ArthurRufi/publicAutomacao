@@ -1,7 +1,9 @@
+from scripts.copy import CopyPDF
+from scripts.routepdf import EncaminharPDF
+from scripts.routercorrectdir import RouterCorrectDir
 from scripts.sourcepdfrout import EncontrarPastaPDF
 from scripts.sourcepdf import EncontrarPDF
 
-p = EncontrarPastaPDF(input("Digite o caminho do diretório: "))
 
 
 
@@ -11,11 +13,17 @@ class Main:
 
     def run(self):
         procura_pasta = EncontrarPastaPDF(input("Digite o caminho do diretório: "))
-        caminho_encontrado = p.search_directory()
-        pdf = EncontrarPDF(caminho_encontrado)
-        pdf.search_pdfs()
-        
-        if self.caminho_pdf:
-            print(f"Processando PDFs no diretório: {self.caminho_pdf}")
-        else:
-            print("Nenhum diretório válido encontrado.")
+        pasta_final = EncontrarPastaPDF(input("Digite o caminho do diretório final: "))
+        caminho_encontrado = procura_pasta.search_directory()
+        pdfs = EncontrarPDF(caminho_encontrado)
+        for pdf in pdfs.search_pdfs():
+            # Aqui você pode chamar a classe EncaminharPDF ou CopyPDF para processar o PDF encontrado
+            # Exemplo:
+            
+            # ou
+            #ARRUMAR LOGICA PARA ENCAMINHAR CAMINHO CORRETO
+            copy_pdf = CopyPDF(f"{caminho_encontrado}\\{pdf}", pasta_final)
+            copy_pdf.copy()
+
+m = Main()
+m.run()
