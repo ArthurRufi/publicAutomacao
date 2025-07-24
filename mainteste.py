@@ -15,6 +15,7 @@ class Main:
         procura_pasta = EncontrarPastaPDF(input("Digite o caminho do diretório: "))
         pasta_final = EncontrarPastaPDF(input("Digite o caminho do diretório final: "))
         caminho_encontrado = procura_pasta.search_directory()
+        caminho_final_encontrado = pasta_final.search_directory()
         pdfs = EncontrarPDF(caminho_encontrado)
         for pdf in pdfs.search_pdfs():
             # Aqui você pode chamar a classe EncaminharPDF ou CopyPDF para processar o PDF encontrado
@@ -22,7 +23,7 @@ class Main:
             
             # ou
             #ARRUMAR LOGICA PARA ENCAMINHAR CAMINHO CORRETO
-            copy_pdf = CopyPDF(f"{caminho_encontrado}\\{pdf}", pasta_final)
+            copy_pdf = CopyPDF(f"{caminho_encontrado}\\{pdf}", caminho_final_encontrado)
             copy_pdf.copy()
 
 m = Main()
