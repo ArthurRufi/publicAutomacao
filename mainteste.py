@@ -13,7 +13,7 @@ class Main:
     def __init__(self):
         pass
 
-    def run(self):
+    def run_copy_pdf(self):
         procura_pasta = EncontrarPastaPDF(input("Digite o caminho do diretório: "))
         pasta_final = EncontrarPastaPDF(input("Digite o caminho do diretório final: "))
         caminho_encontrado = procura_pasta.search_directory()
@@ -24,5 +24,5 @@ class Main:
             copy_pdf.copy()
 
 m = Main()
-m.run()
+m.run_copy_pdf()
 

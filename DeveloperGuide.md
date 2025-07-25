@@ -7,3 +7,7 @@ Mudar forma de selecionar diretorio (Modificar de copiar url para selecionar a p
 
 Organizar arquitetura de software (modulos e pastas)
 
+# Infos sobre tecnologias utilizadas
+
+Trocar PDF2 por pypdf
+Usar pypdf para analisar metadados, paginação e por ai vai
