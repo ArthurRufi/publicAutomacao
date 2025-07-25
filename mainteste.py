@@ -1,3 +1,4 @@
+"""
 from scripts.copy import CopyPDF
 from scripts.routepdf import EncaminharPDF
 from scripts.routercorrectdir import RouterCorrectDir
@@ -28,3 +29,4 @@ class Main:
 
 m = Main()
 m.run()
+"""
