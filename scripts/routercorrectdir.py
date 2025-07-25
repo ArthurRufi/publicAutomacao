@@ -20,7 +20,7 @@ class RouterCorrectDir:
     def get_correct_path(self):
         os_name = self.validate_os.this_os()
         if os_name in ['Windows', 'Linux', 'Darwin']:
-            # Retorna a string do caminho formatada para o SO atual
+            # Retorna a string do caminho formatada para o SO atual (ainda nao testado no MacOS)
             return str(self.caminho_pdf)
         else:
             raise ValueError("Unsupported OS for path correction.")

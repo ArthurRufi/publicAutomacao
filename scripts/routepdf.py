@@ -3,7 +3,7 @@ from scripts.routercorrectdir import RouterCorrectDir
 import os
 
 
-#preciso de um caminho para o PDF
+#verificar possivel abstração futura para receber mais tipos de arquivos
 class EncaminharPDF:
     def __init__(self, caminho_pdf: str):
         self.caminho_pdf = caminho_pdf
@@ -12,8 +12,6 @@ class EncaminharPDF:
         caminho_corrigido = RouterCorrectDir(self.caminho_pdf).get_correct_path()
         
         if os.path.isfile(caminho_corrigido):
-            # Aqui você pode adicionar o código para transferir o PDF para outro local
-            # Exemplo: shutil.move(caminho_corrigido, destino)
             print(f"PDF encontrado e pronto para ser transferido: {caminho_corrigido}")
             return caminho_corrigido
         else:

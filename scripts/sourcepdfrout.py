@@ -5,7 +5,7 @@ class EncontrarPastaPDF:
     def __init__(self, caminho_diretorio):
         self._caminho_diretorio = caminho_diretorio
 
-    #procura se o caminho enviado é um diretorio
+    #procura se o caminho enviado é um diretorio (melhorar a lógica para verificar se é um diretório)
     def search_directory(self):
         caminhocorrigido = RouterCorrectDir(self._caminho_diretorio).get_correct_path()
 

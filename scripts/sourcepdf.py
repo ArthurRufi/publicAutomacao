@@ -7,7 +7,7 @@ class EncontrarPDF:
 
 
     def search_pdfs(self):
-        # Implementar lógica para encontrar o PDF
+        #lembrete: lógica para encontrar o PDF
         arquivos = os.listdir(f'{self.caminho_pdf}')
         caminho_pdf_add = []
 
@@ -15,8 +15,6 @@ class EncontrarPDF:
             if arquivo.endswith('.pdf'):
                 caminho_pdf = os.path.join(arquivo)
                 caminho_pdf_add.append(caminho_pdf)
-                # Aqui você pode adicionar o código para transferir o PDF para outro local
-                # Exemplo: shutil.move(caminho_pdf, destino)
         for n in caminho_pdf_add:
             print(f"PDF encontrado: {n}")
 
