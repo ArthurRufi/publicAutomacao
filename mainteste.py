@@ -8,7 +8,7 @@ from scripts.sourcepdf import EncontrarPDF
 
 
 
-
+#essa classe main vai definir o funcionamento da interface grafica de forma abstraida
 class Main:
     def __init__(self):
         pass
