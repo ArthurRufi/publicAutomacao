@@ -6,4 +6,4 @@ Exemple:
 Para copiar os arquivos, encontrar arquivos, encontrar diretorios e etc...
 
 ## Web Drive
-Esse diretorio é para o selenium e como vai ser lançado de forma "free" dentro do seu google drive
+Esse diretorio é para o selenium e como vai ser lançado de forma "free" dentro do seu google drive 

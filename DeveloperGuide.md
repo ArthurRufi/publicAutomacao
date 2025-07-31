@@ -1,11 +1,11 @@
 # Features:
 Adicionar Interface Grafica
-Mudar forma de selecionar diretorio (Modificar de copiar url para selecionar a pasta)
-
+Adicionar o PDFConfigs para começar a usar somente a parte PDFConfigs para pdfs
 
 # ISSUES
 
-Organizar arquitetura de software (modulos e pastas)
+Precisa abstrair mais em BaseSystem
+
 
 # Infos sobre tecnologias utilizadas
 
